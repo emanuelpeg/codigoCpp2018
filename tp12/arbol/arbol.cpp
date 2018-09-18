@@ -24,15 +24,14 @@ void Arbol<T>::agregar(T otroDato){
 }
 
 template <class T>
-ostream& operator<<(std::ostream& out, Arbol<T> const& a){
-    if (a.izq !=0) {
-        out << *(a.izq);
+void Arbol<T>::imprimir(){
+    if (this->izq !=0) {
+        this->izq->imprimir();
     }
-    out << a.dato << "  ";
-    if (a.der !=0) {
-        out << *(a.der);
+    cout << this->dato << "  ";
+    if (this->der !=0) {
+        this->der->imprimir();
     }
-    return out;
 }
 
 template<class T>

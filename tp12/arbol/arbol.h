@@ -15,7 +15,7 @@ public:
     Arbol(T dato);
     void agregar(T otroDato);
     bool existe(T otroDato);
-    friend ostream& operator<<(std::ostream& out, Arbol<T> const& a);
+    void imprimir();
 };
 
 #endif // ARBOL_H

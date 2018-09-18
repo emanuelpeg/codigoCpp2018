@@ -16,6 +16,6 @@ int main(int argc, char *argv[])
     a.agregar(17);
 
     cout << "Imprimir Arbol" << endl;
-   // cout << a << endl;
+    a.imprimir();
     return 0;
 }
